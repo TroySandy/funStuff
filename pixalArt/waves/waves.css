@@ -1,0 +1,59 @@
+body{
+  background: transparent;
+    
+}
+header{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background: #234;
+}
+.editorial{
+    display: block;
+    width: 100%;
+    height: 50%;
+    max-height: 100vh;
+    margin: 0;
+    position: relative;
+    top: 300px;
+}
+.parallax > use {
+    animation: 25s move-forever cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 9s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: 3s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -1s;
+    animation-duration: 5s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: 2s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(5) {
+    animation-delay: 3s;
+    animation-duration: 5.2s;
+}
+.parallax > use:nth-child(6) {
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.parallax > use:nth-child(7) {
+    animation-delay: -4s;
+    animation-duration: 9s;
+}
+@keyframes move-forever{
+    0%{
+        transform:translate(-90px, 0%) ;
+    }100%{
+        transform:translate(85px, 0%) ;
+    }
+}
+
+
